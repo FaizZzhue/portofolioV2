@@ -49,7 +49,7 @@ header .header-div {
     color: black;
 }
 header .header-a {
-    font-size: 18px;
+    font-size: 23px;
     font-weight: 600;
 }
 
@@ -65,7 +65,6 @@ header .nav-ul {
     flex-direction: row;
     gap: 50px;
     list-style-type: none;
-    padding-left: 10rem;
 }
 
 header .nav-ul li a {
@@ -92,6 +91,66 @@ header .nav-list {
 
     z-index: 9999;
 }
+
+/* .btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 0;
+    outline: 0;
+    color: #fff;
+    background-color: #d595cb;
+    cursor: pointer;
+    padding: 12px 30px;
+    font-size: 1em;
+    border-radius: 50rem;
+    transition: .3s;
+}
+
+.toggleTheme {
+    display: flex;
+    justify-content: center;
+    color: white;
+    transition: .3s;
+}
+
+header a {
+    text-decoration: none;
+    color: rgb(var(--text-color));
+    cursor: pointer;
+    transition: .3s;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    background-color: #d595cb;
+}
+
+.toggleTheme:hover {
+    transform: translateY(0);
+}
+
+.btn i {
+    font-size: 1.3em;
+}
+
+.bx {
+    font-family: boxicons !important;
+    font-weight: 400;
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1;
+    text-rendering: auto;
+    display: inline-block;
+    text-transform: none;
+    speak: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.bxs-moon:before {
+    content: "\ee4e";
+} */
 
 section {
     display: flex;
@@ -397,8 +456,9 @@ footer {
 
     header .nav-li {
         padding: 15px 30px;
-        border-top: 1px solid rgb(var(--text-color), .2);
+        border-top: 1px solid grey;
     }
+    
 
     section {
         height: auto !important;
