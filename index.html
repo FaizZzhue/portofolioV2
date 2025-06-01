@@ -14,6 +14,7 @@
             integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" 
             crossorigin="anonymous"     
             referrerpolicy="no-referrer" />
+            <script defer src="asset/script/main.js"></script>
         </head>
         <body>
             <header data-cur="cursor">
@@ -44,7 +45,7 @@
                             This is the first Web Design that I made, this is just a small part of the sweetener that I present to you.
                         </p>
                         <div>
-                            <button class="button-home">Contact Me</button>
+                            <button class="button-home" onclick="document.getElementById('Contact').scrollIntoView({ behavior: 'smooth' })">Contact Me</button>
                         </div>
                     </div>
                 </div>
@@ -133,15 +134,12 @@
                 <div class="title-content">
                     <div class="border">
                         <input class="input" type="text" name="name" id="name" placeholder="Your Name" data-cur="cursor">
-                        <label for="name">Your Name</label>
                     </div>
                     <div class="border">
                         <input class="input" type="text" name="email" id="email" placeholder="Email" data-cur="cursor">
-                        <label for="email">Email</label>
                     </div>
                     <div class="border">
                         <textarea class="input" type="text" name="message" id="message" placeholder="Your Message" data-cur="cursor"></textarea>
-                        <label for="message">Your Message</label>
                     </div>
                     <button class="button-contact">Send</button>
                 </div>
@@ -162,8 +160,5 @@
                 <h1>Afaizyr</h1>
                 <p>&#169; Our Love</p>
             </footer>
-
-            <script defer src="asset/script/main.js"></script>
-
         </body>
     </html>
