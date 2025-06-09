@@ -14,10 +14,11 @@
             integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" 
             crossorigin="anonymous"     
             referrerpolicy="no-referrer" />
+            <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
             <script defer src="asset/script/main.js"></script>
         </head>
         <body>
-            <header data-cur="cursor">
+            <header>
                 <div class="header-div">
                     <!-- Hamburger Menu -->
                     <div class="hamburger" onclick="toggleMenu()">
@@ -31,11 +32,11 @@
                         <li class="nav-li"><a href="#About">About</a></li>
                         <li class="nav-li"><a href="#Skills">Skills</a></li>
                         <li class="nav-li"><a href="#Contact">Contact</a></li>
-                        <!-- <li>
-                            <a class="toogleTheme btn" data-cur="pointer">
+                        <li class="nav-li">
+                            <a class="button-thema" data-cur="pointer">
                                 <i class="bx bxs-moon"></i>
                             </a>
-                        </li> -->
+                        </li>
                     </ul>
                 </div>
             </header>
@@ -50,7 +51,7 @@
                             This is the first Web Design that I made, this is just a small part of the sweetener that I present to you.
                         </p>
                         <div>
-                            <button class="button-home" onclick="document.getElementById('Contact').scrollIntoView({ behavior: 'smooth' })">Contact Me</button>
+                            <button class="button-home" onclick="document.getElementById('Contact').scrollIntoView({ behavior: 'smooth' })"><i class="fas fa-phone phone-icon-hover" id="phoneIcon"></i>Contact Me</button>
                         </div>
                     </div>
                 </div>
@@ -85,52 +86,58 @@
             <section id="skills">
                 <div class="title-content">
                     <div class="skills-cirular">
-                        <div class="circular circular-html">
-                            <div class="inner">
-                                <img src="asset/image/html-image.png" alt="HTML" class="skills-image-html">
-                            </div>
+                        <div class="flip-front">
+                            <img src="asset/image/html-image.png" alt="HTML" class="skills-image-html">
+                            <h2>HTML</h2>
                         </div>
-                        <p>HTML</p>
+                        <div class="flip-back">
+                            <p>Fundamental knowledge of HTML structure.</p>
+                        </div>
                     </div>
                     <div class="skills-cirular">
-                        <div class="circular circular-css">
-                            <div class="inner">
-                                <img src="asset/image/css-image.png" alt="CSS" class="skills-image">
-                            </div>
+                        <div class="flip-front">
+                            <img src="asset/image/css-image.png" alt="CSS" class="skills-image">
+                            <h2>CSS</h2>    
                         </div>
-                        <p>CSS</p>    
+                        <div class="flip-back">
+                            <p>Basic understanding of styling using CSS.</p>
+                        </div>
                     </div>
                     <div class="skills-cirular">
-                        <div class="circular circular-js">
-                            <div class="inner">
-                                <img src="asset/image/js-image.png" alt="JavaScript" class="skills-image">
-                            </div>
+                        <div class="flip-front">
+                            <img src="asset/image/js-image.png" alt="JavaScript" class="skills-image">
+                            <h2>JavaScript</h2>
                         </div>
-                        <p>JavaScript</p>
+                        <div class="flip-back">
+                            <p>Currently learning JavaScript interactivity.</p>
+                        </div>
                     </div>
                     <div class="skills-cirular">
-                        <div class="circular circular-py">
-                            <div class="inner">
-                                <img src="asset/image/py-image.png" alt="Python" class="skills-image">
-                            </div>
+                        <div class="flip-front">
+                            <img src="asset/image/py-image.png" alt="Python" class="skills-image">
+                            <h2>Python</h2>
                         </div>
-                        <p>Python</p>
+                        <div class="flip-back">
+                            <p>Learning Python for automation and logic.</p>    
+                        </div>
                     </div>
                     <div class="skills-cirular">
-                        <div class="circular circular-java">
-                            <div class="inner">
-                                <img src="asset/image/java-image.png" alt="Java" class="skills-image">
-                            </div>
+                        <div class="flip-front">
+                            <img src="asset/image/java-image.png" alt="Java" class="skills-image-java">
+                            <h2>Java</h2>
                         </div>
-                        <p>Java</p>
+                        <div class="flip-back">
+                            <p>Understanding Java Core Concepts.</p>    
+                        </div>
                     </div>
                     <div class="skills-cirular">
-                        <div class="circular circular-react">
-                            <div class="inner">
-                                <img src="asset/image/react-image.png" alt="React" class="skills-image">
-                            </div>
+                        <div class="flip-front">
+                            <img src="asset/image/react-image.png" alt="React" class="skills-image">
+                            <h2>React</h2>
+                        </div>    
+                        <div class="flip-back">
+                            <p>Getting Started with React Components.</p>    
                         </div>
-                        <p>React</p>
                     </div>
                 </div>
             </section>
@@ -146,7 +153,7 @@
                     <div class="border">
                         <textarea class="input" type="text" name="message" id="message" placeholder="Your Message" data-cur="cursor"></textarea>
                     </div>
-                    <button class="button-contact">Send</button>
+                    <button class="button-contact"><i class="fas fa-paper-plane"></i>Send</button>
                 </div>
             </section>     
 
@@ -155,8 +162,8 @@
                     <ul class="aside-ul">
                         <li><a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a></li>
                         <li><a href="https://www.linkedin.com/in/achmad-faiz-yudha-ramadhan-203707341/"><i class="fab fa-linkedin-in"></i></a></li>
-                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="https://x.com/"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a></li>
                     </ul>
                 </div>
             </aside>
