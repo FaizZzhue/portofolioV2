@@ -314,6 +314,7 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
     transition: opacity 0.3s ease-in-out;
     -webkit-transition: opacity 0.3s ease-in-out;
     -moz-transition: opacity 0.3s ease-in-out;
@@ -325,7 +326,6 @@ h1 {
 .skills-cirular:nth-child(5) .flip-front h2 { /* Java */
     margin-top: 16px;
 }
-
 
 .flip-back {
     opacity: 0;
